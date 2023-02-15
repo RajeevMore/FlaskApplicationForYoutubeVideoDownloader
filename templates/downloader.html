@@ -1,0 +1,18 @@
+<html>
+  <head>
+  <!--  Load CSS in Flask with html-->
+  <link rel="stylesheet" href='/static/css/main.css' />
+</head>
+ <body>
+    <form method = "post" action="/download">
+      <h1>Youtube Video Downloader </h1>
+      <div>
+        <label for="string1"><strong>Provide Youtube Video link for download</strong></label> <br/>
+        <input type="text" placeholder="Provide Youtube Link" name="link" required> <br/>
+        <br/> <br/>
+      </div>
+      <button type="submit"><strong>Download Video</strong></button> <br/> <br/>
+      <div class="msg"><h3> {{ msg }}</h3></div>
+    </form>
+ </body>
+</html>
